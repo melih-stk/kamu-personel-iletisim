@@ -1,0 +1,55 @@
+name: mobitkamu
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^2.2.2
+  share_plus: ^7.2.1
+  mask_text_input_formatter: ^2.9.0
+  url_launcher: ^6.2.6
+  flutter_native_splash: ^2.4.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/jandarma.png
+    - assets/egm.png
+    - assets/mobit.png
+    - assets/mobitbg.png
+    - assets/mobitintro1.png
+    - assets/kizilay.png
+
+
+flutter_icons:
+  android: true
+  image_path: "assets/mobitbg.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/mobitbg.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/mobitintro1.png
+
+  android: true
+  ios: false
+  web: false
+
+  android_gravity: center
